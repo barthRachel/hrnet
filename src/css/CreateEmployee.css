@@ -1,0 +1,63 @@
+.subtitle h2 {
+    font-family: 'Alegreya SC';
+}
+
+.form-data {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#createEmployee-form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    padding: 10px;
+}
+
+label {
+    margin: 1rem 0 10px 0;
+}
+
+input {
+    height: 25px;
+    padding: 5px 7px;
+}
+
+select {
+    height: 40px;
+    padding: 5px 7px;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 2px solid #5a6f08;
+}
+
+.sumbitForm-container {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.react-datepicker__input-container {
+    display: flex!important;
+    align-items: center;
+}
+
+/** Slight styling changes to the Datepicker library **/
+.react-datepicker__view-calendar-icon input {
+    width: 100%;
+}
+
+.react-datepicker__day--selected, .react-datepicker__day--in-selecting-range, .react-datepicker__day--in-range, .react-datepicker__month-text--selected, .react-datepicker__month-text--in-selecting-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--selected, .react-datepicker__quarter-text--in-selecting-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--selected, .react-datepicker__year-text--in-selecting-range, .react-datepicker__year-text--in-range {
+    background-color: #5a6f08!important;
+    color: white!important;
+}
+
+.react-datepicker__day--keyboard-selected, .react-datepicker__month-text--keyboard-selected, .react-datepicker__quarter-text--keyboard-selected, .react-datepicker__year-text--keyboard-selected {
+    background-color: rgba(90, 111, 8, 0.45)!important;
+    color: black!important;
+}

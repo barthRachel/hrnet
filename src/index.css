@@ -21,8 +21,29 @@ main {
   align-items: center;
 }
 
-/** Link Style **/
+/** "Header" Style **/
+header {
+  border-bottom: 1px solid #A7A7A7;
+  box-shadow: 0px 5px 10px 1px #A7A7A7;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 0;
+}
 
+header h1 {
+  margin: 0 0 0 15px;
+  padding: 0;
+  font-family: 'Alegreya SC';
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+/** Link Style **/
 .btn {
   background-color: #5a6f08;
   border: 2px solid transparent;
@@ -38,4 +59,5 @@ main {
   background-color: white;
   color: #5a6f08;
   border: 2px solid #5a6f08;
+  cursor: pointer;
 }
