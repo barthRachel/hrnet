@@ -16,7 +16,9 @@ function CreateEmployee() {
     let statesNameArray = [];
     let statesAbbreviationArray = [];
     statesList.map((infos) => (
-        statesNameArray.push(infos.name),
+        statesNameArray.push(infos.name)
+    ))
+    statesList.map((infos) => (
         statesAbbreviationArray.push(infos.abbreviation)
     ))
 
@@ -70,7 +72,7 @@ function CreateEmployee() {
                         <SelectMenu 
                             options={statesNameArray}
                             optionsValues={statesAbbreviationArray}
-                            width={"100%"}
+                            width={"298"}
                         />
 
                         <label htmlFor="zip-code">Zip Code</label>
@@ -78,9 +80,9 @@ function CreateEmployee() {
                     </fieldset>
 
                     <label htmlFor="department">Department</label>
-                    <SelectMenu 
+                    <SelectMenu id='departmentSelectMenu'
                         options={departmentList}
-                        width={"100%"}
+                        width={"330"}
                     />
 
                     <div className='sumbitForm-container'>
