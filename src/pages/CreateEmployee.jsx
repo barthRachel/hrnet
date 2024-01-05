@@ -24,7 +24,7 @@ function CreateEmployee() {
 
     return(
         <main className='main-createEmployee'>
-            <header>
+            <header className='main-header'>
                 <h1>HRnet</h1>
                 <nav>
                     <Link to={"/"} className='btn'>Home</Link>
