@@ -1,0 +1,9 @@
+.main-listEmployee {
+    border: 2px solid green;
+}
+
+.employee-list-wrapper {
+    border: 2px solid red;
+    width: 100%;
+    padding: 0 30px;
+}
