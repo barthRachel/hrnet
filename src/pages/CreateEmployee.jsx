@@ -61,21 +61,27 @@ function CreateEmployee() {
                     <input id='last-name' type='text' {...register("lastname")} />
 
                     <label htmlFor='date-of-birth'>Date of Birth</label>
-                    <DatePicker 
+                    <DatePicker
                         id='date-of-birth'
-                        showIcon
                         selected={dateOfBirth}
                         onChange={(date) => setDateOfBirth(date)}
-                        closeOnScroll={true}
-                    />
-                    
-
-                    <label htmlFor='start-date'>Start Date</label>
-                    <DatePicker 
+                        peekNextMonth
+                        showMonthDropdown
+                        showYearDropdown
+                        dropdownMode="select"
                         showIcon
+                    /> 
+                    
+                    <label htmlFor='start-date'>Start Date</label>
+                    <DatePicker
+                        id='start-date'
                         selected={startDate}
                         onChange={(date) => setStartDate(date)}
-                        closeOnScroll={true}
+                        peekNextMonth
+                        showMonthDropdown
+                        showYearDropdown
+                        dropdownMode="select"
+                        showIcon
                     />
 
                     <fieldset className="address">

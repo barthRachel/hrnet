@@ -61,3 +61,7 @@ select {
     background-color: rgba(90, 111, 8, 0.45)!important;
     color: black!important;
 }
+
+.react-datepicker__header__dropdown {
+    margin-top: 5px!important;
+}
