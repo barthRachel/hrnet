@@ -3,19 +3,23 @@ import departmentList from '../data/department.json';
 import statesList from '../data/states.json';
 import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
+import React, { useState } from "react";
 
 import { useDispatch, useSelector } from 'react-redux';
 import { addEmployee } from '../features/save/saveSlice';
 
-import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-
 import { SelectMenu } from '@leoncik/p14-hrnet-plugin';
+
+import Modal from '@barthrachel/modal_component/dist/Modal'
 
 function CreateEmployee() {
     const [dateOfBirth, setDateOfBirth] = useState(new Date());
     const [startDate, setStartDate] = useState(new Date());
+    
+    //obliagtoire pour la modale
+    const [openModal, setOpenModal] = useState(false)
 
     let statesNameArray = [];
     let statesAbbreviationArray = [];
@@ -37,6 +41,12 @@ function CreateEmployee() {
         data.state = document.querySelector('#state').childNodes[0].getAttribute('value');
         data.department = document.querySelector('#departmentSelectMenu').childNodes[0].getAttribute('value');
         dispatch(addEmployee(data))
+        setOpenModal(true)
+    }
+
+    //closeModal obligatoire pour la fermeture de la modale
+    const closeModal = () => {
+        setOpenModal(false)
     }
 
     return(
@@ -117,6 +127,16 @@ function CreateEmployee() {
                     </div>
                 </form>
             </section>
+
+            {
+                openModal && (
+                    <Modal 
+                        text={"Employee Created !"}
+                        isOpen={openModal}
+                        onClose={closeModal}
+                    />
+                )
+            }
         </main>
     )
 }
