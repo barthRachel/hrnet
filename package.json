@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@barthrachel/modal_component": "^0.1.3",
+    "@barthrachel/modal_component": "^0.1.6",
     "@leoncik/p14-hrnet-plugin": "^1.0.1",
     "@reduxjs/toolkit": "^2.0.1",
     "@testing-library/jest-dom": "^5.17.0",
