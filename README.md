@@ -3,6 +3,7 @@
 ### Réalisation - "Faites passer une librairie jQuery vers React"
 
 - [Dossier src du repo](https://github.com/barthRachel/hrnet)
+- [Repo plugin Modal](https://github.com/barthRachel/ModalComponent)
 - [Rapport de performances](https://github.com/barthRachel/hrnet/blob/main/rapport_performances.pdf)
 
 ---
