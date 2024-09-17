@@ -1,22 +1,26 @@
 import { createSlice } from '@reduxjs/toolkit'
-//import data from '../../data/testData'
+// import data from '../../data/testData'
 
 const  initialState = {
-    employeeList: [
+    employeeList:[
         {
             id: 1,
-            firstname: 'Rachel',
-            lastname: 'Barthelery',
-            startDate: "16/01/2024",
-            department: "Sales",
-            dateOfBirth: "03/05/1999",
-            street: "26 rue de Paris",
-            city: "Epinay-sur-Seine",
-            state: "AL",
-            zipCode: "98000",
+            firstname: 'Lauriane',
+            lastname: 'Ernser',
+            startDate: "25/12/2024",
+            department: "Engineering",
+            dateOfBirth: "16/11/1991",
+            street: "408 Carter Parks Apt. 269",
+            city: "Beahanfort",
+            state: "NE",
+            zipCode: "03694-2009",
         },
     ],
 }
+
+/* const initialState = {
+    employeeList: data
+}*/
 
 const saveSlice = createSlice({
     name: 'save',

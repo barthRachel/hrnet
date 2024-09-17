@@ -16,6 +16,12 @@ Clonez ce repo. Ouvrez un terminal. Placez vous sur le dossier du projet et lanc
 
 ---
 
+### Autres informations
+
+Si jamais vous souhaitez voir à quoi ressemble un tableau des employés dûment rempli, vous pouvez ouvrir le fichier `./src/features/save/saveSlice.js`. Suite à ça, vous devez dé-commenter la ligne 2 ainsi que les lignes 21 à 23 puis commenter les lignes 4 à 19. Enfin, sauvegardez votre fichier, vous trouverez alors votre page `/list` remplie avec des employés fictifs.
+
+---
+
 ### Scénario
 
 "Vous travaillez pour le département technologique d'une grande société financière, WealthHealth.
